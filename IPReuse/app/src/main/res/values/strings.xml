@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IPReuse</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_signin_gmail"
+        style="@style/GmailLoginButton"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        app:buttonSize="wide"
+        app:colorScheme="dark"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_signin_fb" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_signin_fb"
+        style="@style/FacebookLoginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:layout_above="@+id/btn_signin_link" />
+
+
+    <Button
+        android:id="@+id/btn_signin_link"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="136dp"
+        android:layout_alignLeft="@+id/btn_signin_gmail"
+        android:layout_alignStart="@+id/btn_signin_gmail"
+        android:layout_alignRight="@+id/btn_signin_fb"
+        android:layout_alignEnd="@+id/btn_signin_fb" />
+
+</RelativeLayout>
